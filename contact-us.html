@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="contact-form">
+      <form action="https://api.web3forms.com/submit" class = "contact-us" method="POST">
+      <input type="hidden" name="access_key" value="41928a73-e98d-4c64-82cf-48b738b9fdd4">
+
+      <h1 style="font-size:45px;">CONTACT US</h1>
+      <label for="name">YOUR NAME</label>
+      <input style="font-size:18px;" type="text" id="name" name="name" placeholder="type your name here..">
+      
+      <label for="email">YOUR EMAIL</label>
+      <input style="font-size:18px;" type="email" id="email" name="email" placeholder="type your email here..">
+      
+      <label for="phone">YOUR PHONE NUMBER</label>
+      <input style="font-size:18px;" type="tel" id="phone" name="phone" placeholder="type your phone number here..">
+      
+      <label for="message">WHAT CAN WE DO FOR YOU?</label>
+      <textarea  style="font-size:18px;" id="message" name="message" rows="6" placeholder="what kind of applications you are looking for?"></textarea>
+
+      <label for="budget">WHAT IS YOUR BUDGET?</label>
+      <input style="font-size:18px;" type="text" id="budget" name="budget" placeholder="type your budget..">
+      
+      <center> <button type="submit">Submit</button> </center>
+
+    </form>
+    </div>
+	<script src="index.js"></script>
+  </body>
+</html>
