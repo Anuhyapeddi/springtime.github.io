@@ -229,6 +229,7 @@ body {
   .contact-form button:hover {
     background-color: #454846;
   }
+<<<<<<< HEAD
   
   @media (max-width: 600px) {
     .contact-form h1 {
@@ -236,3 +237,105 @@ body {
     }
   }
   
+=======
+
+  /* about-us */
+
+  body {
+    font-family:'Comfortaa';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.about-us-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-section h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+/* footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left .logo {
+    width: 300px;
+}
+
+.footer-center {
+    display: flex;
+    align-items: center;
+}
+.footer-center a {
+    display: block; /* or inline-block */
+    margin-bottom: 10px; /* Adjust as needed for spacing between links */
+    text-decoration: none;
+}
+
+.footer-center img {
+    width: 20px; /* Set the width of the images */
+    height: 20px; /* Set the height of the images */
+    margin-right: 5px; /* Add some space between the icon and the text */
+}
+
+.footer-center a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+footer p {
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+
+
+>>>>>>> body
