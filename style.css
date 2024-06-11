@@ -229,7 +229,7 @@ body {
   .contact-form button:hover {
     background-color: #454846;
   }
-<<<<<<< HEAD
+
   
   @media (max-width: 600px) {
     .contact-form h1 {
@@ -237,7 +237,6 @@ body {
     }
   }
   
-=======
 
   /* about-us */
 
@@ -296,13 +295,19 @@ footer {
 }
 
 .footer-center {
-    display: flex;
+    display: block;
     align-items: center;
 }
+
 .footer-center a {
-    display: block; /* or inline-block */
-    margin-bottom: 10px; /* Adjust as needed for spacing between links */
+    display: block;
+    /* list-style: none; */
+    align-items: center;
     text-decoration: none;
+    margin-bottom: 10px; /* Adjust as needed for spacing between links */
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
 }
 
 .footer-center img {
@@ -311,12 +316,8 @@ footer {
     margin-right: 5px; /* Add some space between the icon and the text */
 }
 
-.footer-center a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    margin: 5px 0;
-}
+ 
+
 
 .footer-right {
     flex: 1;
@@ -338,4 +339,4 @@ footer p {
 
 
 
->>>>>>> body
+
