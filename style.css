@@ -140,7 +140,7 @@ li a{
     opacity: 0.5; /* Change opacity here */
     z-index: -1;
 }
-/*  */
+
 .main-container .text {
     position: relative;
     z-index: 2;
