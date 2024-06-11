@@ -244,16 +244,12 @@ body {
     font-family:'Comfortaa';
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 .about-us-section {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-us-section h1 {
@@ -288,6 +284,7 @@ footer {
 
 .footer-left {
     flex: 1;
+    margin-right: 200px;
 }
 
 .footer-left .logo {
@@ -297,6 +294,7 @@ footer {
 .footer-center {
     display: block;
     align-items: center;
+    margin-right: 300px;
 }
 
 .footer-center a {
@@ -316,15 +314,16 @@ footer {
     margin-right: 5px; /* Add some space between the icon and the text */
 }
 
- 
-
 
 .footer-right {
+    display: block;
+    align-items:center;
     flex: 1;
-    text-align: right;
+    text-align: left;
 }
 
 .footer-right a {
+
     display: block;
     color: #fff;
     text-decoration: none;
