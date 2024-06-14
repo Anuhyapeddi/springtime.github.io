@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-<script>
-  function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /*loop through a collection of all HTML elements:*/
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain attribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /*make an HTTP request using the attribute value as the file name:*/
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <script>
+      function includeHTML() {
+        var elements, i, element, file, xhttp;
+        elements = document.getElementsByTagName("*");
+        for (i = 0; i < elements.length; i++) {
+          element = elements[i];
+          file = element.getAttribute("w3-include-html");
+          if (file) {
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4) {
+                if (this.status == 200) { element.innerHTML = this.responseText; }
+                if (this.status == 404) { element.innerHTML = "Page not found."; }
+                element.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            return;
           }
-        }      
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /*exit the function:*/
-        return;
-      }
-    }
-  };
-</script>
-
-  </head>
-  
-  <body>
+        }
+      };
+    </script>
+</head>
+<body>
     <div class="navbar">
         <div class="navdiv"> 
             <div class="logo"><a href='#'><img src="assets/logo-1.jpeg" alt="Our Site Logo"></a></div>
@@ -53,22 +46,25 @@
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">FAQs</a></li>
-
             </ul>
         </div>
-
-        </div>
-        
-      
+    </div>
+    
     <div class="main-container">
         <div class="text">
             About the us....
         </div>
     </div>
+<div section="services">
+    <div w3-include-html="services.html"></div>
+</div>
+
     <div w3-include-html="contact-us.html"></div>
+
     <script>
       includeHTML();
-      </script>
-	<script src="index.js"></script>
-  </body>
+    </script>
+
+    <script src="index.js"></script>
+</body>
 </html>

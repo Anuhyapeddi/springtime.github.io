@@ -236,6 +236,7 @@ body {
       font-size: 36px;
     }
   }
+<<<<<<< HEAD
   
 
   /* about-us */
@@ -361,3 +362,13 @@ footer p {
 
 
 
+=======
+  /* services styles */
+  .container-services{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+  }
+>>>>>>> homepage
