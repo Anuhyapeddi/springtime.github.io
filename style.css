@@ -67,9 +67,10 @@ body {
     .contact-form {
       width: 80vw;
     }
-  }
-  
-  .navbar {
+}
+
+.navbar{
+    
     background: white;
     padding-right: 15px;
     padding-left: 15px;
@@ -251,6 +252,9 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-us-section h1 {
@@ -339,8 +343,6 @@ footer {
 
 
 .footer-right {
-    display: block;
-    align-items:center;
     flex: 1;
     text-align: left;
 }
