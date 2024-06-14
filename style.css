@@ -237,8 +237,6 @@ body {
       font-size: 36px;
     }
   }
-<<<<<<< HEAD
-  
 
   /* about-us */
 
@@ -252,9 +250,6 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-us-section h1 {
@@ -361,10 +356,6 @@ footer p {
     font-size: 14px;
 }
 
-
-
-
-=======
   /* services styles */
   .container-services{
     margin-top: 20px;
@@ -373,4 +364,4 @@ footer p {
     height: 400px;
     text-align: center;
   }
->>>>>>> homepage
+
