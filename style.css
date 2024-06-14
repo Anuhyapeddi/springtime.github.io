@@ -267,6 +267,28 @@ body {
 
 /* footer */
 
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .footer-left {
+        margin-right: 100px; /* Reduced margin */
+    }
+
+    .footer-center {
+        margin-right: 100px; /* Reduced margin */
+    }
+}
+
+@media (max-width: 576px) {
+    /* Further adjustments for smaller screens */
+    .footer-left {
+        margin-right: 20px; /* Even more reduced margin */
+    }
+
+    .footer-center {
+        margin-right: 20px; /* Even more reduced margin */
+    }
+}
+
 footer {
     background-color: #000;
     color: #fff;
