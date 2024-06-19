@@ -34,32 +34,40 @@
       };
     </script>
 </head>
-<body>
-    <div class="navbar">
-        <div class="navdiv"> 
-            <div class="logo"><a href='#'><img src="assets/logo-1.jpeg" alt="Our Site Logo"></a></div>
-            
-            <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
-            <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">FAQs</a></li>
-            </ul>
+<header>
+  
+        <div class="logo"><a href="#"><img src="assets/logo-1.jpeg" alt="Our Site Logo"></a></div>
+    <div class="navigation">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+        <ul class="menu" id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          
+        </ul>
     </div>
     
+
+</header> 
+<body>
+    
+   
+   
     <div class="main-container">
         <div class="text">
             About the us....
         </div>
     </div>
-<div section="services">
-    <div w3-include-html="services.html"></div>
-</div>
 
-    <div w3-include-html="contact-us.html"></div>
+    <div w3-include-html="services.html"></div>
+
+
+    <div w3-include-html="contact.html"></div>
 
     <script>
       includeHTML();
